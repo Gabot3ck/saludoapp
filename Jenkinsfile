@@ -9,7 +9,10 @@ pipeline {
     stages {
         stage('Clonar') {
             steps {
-                git 'https://github.com/Gabot3ck/saludoapp'
+                git(
+                  url: 'https://github.com/Gabot3ck/saludoapp',
+                  branch: 'main'
+                )
             }
         }
         
